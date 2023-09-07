@@ -1,1 +1,28 @@
-key : val
+COLUMNS:
+  cap-shape               :   object
+  cap-surface             :   object
+  cap-color               :   object
+  bruises                 :   object
+  odor                    :   object
+  gill-attachment         :   object
+  gill-spacing            :   object
+  gill-size               :   object
+  gill-color              :   object
+  stalk-shape             :   object
+  stalk-root              :   object
+  stalk-surface-above-ring:   object
+  stalk-surface-below-ring:   object
+  stalk-color-above-ring  :   object
+  stalk-color-below-ring  :   object
+  veil-type               :   object
+  veil-color              :   object
+  ring-number             :   object
+  ring-type               :   object
+  spore-print-color       :   object
+  population              :   object
+  habitat                 :   object
+
+
+
+TARGET_COLUMN:
+  name : class
