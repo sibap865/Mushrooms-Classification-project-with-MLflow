@@ -14,7 +14,7 @@ data_validation:
 
 data_transformation:
   root_dir: artifacts/data_transformation
-  data_path: artifacts/data_ingestion/mushrooms.csv
+  data_path: artifacts//data_validation/mushrooms.csv
 
 
 model_trainer:

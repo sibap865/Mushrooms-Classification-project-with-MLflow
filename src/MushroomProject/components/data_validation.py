@@ -26,7 +26,10 @@ class DataValiadtion:
                     validation_status = True
                     with open(self.config.STATUS_FILE, 'w') as f:
                         f.write(f"Validation status: {validation_status}")
-            
+            # droping nulll values column and unuseful columns
+            logger.info("droping nulll values column and unuseful columns")
+            data.drop(columns=["veil-type","stalk-root"],axis=1,inplace=True)
+            data.to_csv(self.config.root_dir+"/mushrooms.csv")
 
             return validation_status
         

@@ -17,9 +17,7 @@ class DataTransformation:
     # I am only adding train_test_spliting cz this data is already cleaned up
     def label_encoding_to_all_feature(self):
         data = pd.read_csv(self.config.data_path)
-        # droping nulll values column and unuseful columns
-        logger.info("droping nulll values column and unuseful columns")
-        data.drop(columns=["veil-type","stalk-root"],axis=1,inplace=True)
+        
         
         # converting all categorical columns to numerical
         logger.info("converting all categorical columns to numerical using LabelEncoder")
