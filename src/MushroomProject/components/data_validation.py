@@ -29,7 +29,7 @@ class DataValiadtion:
             # droping nulll values column and unuseful columns
             logger.info("droping nulll values column and unuseful columns")
             data.drop(columns=["veil-type","stalk-root"],axis=1,inplace=True)
-            data.to_csv(self.config.root_dir+"/mushrooms.csv")
+            data.to_csv(self.config.root_dir+"/mushrooms.csv",index=False)
 
             return validation_status
         

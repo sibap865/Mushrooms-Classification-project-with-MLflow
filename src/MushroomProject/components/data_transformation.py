@@ -27,7 +27,7 @@ class DataTransformation:
             data[column] = labelencoder.fit_transform(data[column])
         logger.info("Columns datatype after converting to numerical")
         logger.info(f"{data.dtypes}")
-        data.to_csv(os.path.join(self.config.root_dir, "data.csv"))
+        data.to_csv(os.path.join(self.config.root_dir, "data.csv"),index=False)
 
 
 
